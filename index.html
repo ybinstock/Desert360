@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Desert360 </title>
+  <meta name="description" content="Desert360 with A-Frame">
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+
+  <script src="bundle.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+
+  <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v2.5.2/dist/aframe-extras.js"></script>
+  <script src="https://rawgit.com/ngokevin/aframe-layout-component/master/dist/aframe-layout-component.min.js"></script>
+
+</head>
+<body>
+<a-scene>
+
+  <a-assets>
+  </a-assets>
+  <a-entity id="scene1" visible="true">
+    <a-sky id="desert_1" src="desert1.jpg"></a-sky>
+  </a-entity>
+
+  <a-entity id="scene2" visible="false">
+    <a-sky id="desert_2" src="desert2.jpg"></a-sky>
+  </a-entity>
+
+  <a-entity id="scene3" visible="false">
+    <a-sky id="desert_3" src="desert5.jpg"></a-sky>
+  </a-entity>
+
+  <a-entity id="scene4" visible="false">
+    <a-sky id="desert_4" src="desert4.jpg"></a-sky>
+  </a-entity>
+
+  <a-entity id="poem" geometry="primitive: plane" visible="false" material="color: blue"
+            sound="src: poem2.mp3; volume: 3; autoplay: true; loop: false"></a-entity>
+
+</a-scene>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
